@@ -108,10 +108,11 @@
           //     .addEventListener("click", calll);
           // Create own peer object with connection to shared PeerJS server
           peer = new Peer("2", {
-            host: "18.196.241.16",
-            port: "8000",
+            host: "meiki.laroza.dev/peer",
+            port:'443',
             path: "/",
-            debug: 2,
+            secure:true,
+            debug: 3,
           });
 
           peer.on("open", function (id) {
