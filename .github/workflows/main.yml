@@ -37,5 +37,6 @@ jobs:
           host: ${{ secrets.HOST }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
+          passphrase: ${{ secrets.PASS }}
           source: "hey"
           target: "/home/meiki/hey"
